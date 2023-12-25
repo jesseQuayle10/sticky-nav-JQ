@@ -1,0 +1,68 @@
+/********RESET*******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  height: 100vh;
+  max-width: 1440px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  padding: 0 3rem;
+  background-color: #222;
+  z-index: 1000;
+}
+
+.nav__links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  font-size: 16px;
+}
+
+section {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:first-of-type {
+  background-color: #777;
+}
+
+section:last-of-type {
+  background-color: #ddd;
+}
+
+.main-nav.sticky {
+  max-width: 1440px;
+  position: fixed;
+}
